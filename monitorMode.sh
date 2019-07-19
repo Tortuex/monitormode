@@ -19,6 +19,7 @@ if [ $OPT = "ON" ] || [ $OPT = "on" ] || [ $OPT = "n" ] || [ $OPT = "N" ]; then
         sleep 1
         ifconfig $INT down
         iwconfig $INT mode monitor
+        macchanger -r $INT
         ifconfig $INT up
         sleep 1
 
