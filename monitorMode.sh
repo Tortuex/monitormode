@@ -26,7 +26,7 @@ if [ $OPT = "ON" ] || [ $OPT = "on" ] || [ $OPT = "n" ] || [ $OPT = "N" ]; then
         read -p "Done! Do you want to kill NetworkManager services with airmon-ng (Y / N)? " KILL
 
         if [ $KILL = "YES" ] || [ $KILL = "yes" ] || [ $KILL = "Y" ] || [ $KILL = "y" ]; then
-                airmon-ng check kill $INT
+                airmon-ng check kill
         else
                 echo "You chose not to, enjoy!"
                 exit 1
